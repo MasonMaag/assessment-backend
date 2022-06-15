@@ -5,23 +5,67 @@ body{
     background-color: rgb(113, 2, 113);
 }
 
-header {
-    height: 20vh;
+
+
+img:hover {
+    /* box-shadow: 0px 0px 100px 1px darkmagenta; */
+    transition: transform .9s, box-shadow 0s;
+    transform: rotate(360deg);
+    cursor: pointer;
+  }
+
+#complimentButton:hover {
+    border-color: darkmagenta;
+    box-shadow: 0px 0px 30px 1px black;
+    color: darkmagenta;
+    transform: scale(1.1, 1.1);
+}
+
+#fortuneButton:hover {
+    border-color: darkmagenta;
+    box-shadow: 0px 0px 30px 1px black;
+    color: darkmagenta;
+    transform: scale(1.1, 1.1);
+}
+
+#all:hover {
+    border-color: darkmagenta;
+    box-shadow: 0px 0px 30px 1px black;
+    color: darkmagenta;
+    transform: scale(1.1, 1.1);
+}
+
+#create-btn:hover {
+    border-color: darkmagenta;
+    box-shadow: 0px 0px 30px 1px black;
+    color: darkmagenta;
+    transform: scale(1.1, 1.1);
+}
+
+#del-btn:hover {
+    border-color: darkmagenta;
+    box-shadow: 0px 0px 30px 1px black;
+    color: darkmagenta;
+    transform: scale(1.1, 1.1);
+}
+
+/* header {
+    height: 170px;
     background-color: rgba(0, 0, 0, 0.766);
     border: 15px;
     border-style: groove dashed;
     border-color: gray rgba(65, 64, 64, 0.978);
-    /* box-shadow: 0px 0px 25px 15px black ; */
+    box-shadow: 0px 0px 25px 15px black ;
     box-shadow: 150px 250px 270px 280px rgba(0, 0, 0, 0.896);
-}
+} */
 
 h1 {
     height: fit-content;
     width: fit-content;
     background-color: rgb(113, 2, 113);
-    /* color: rgb(220, 190, 237); */
+    color: rgb(220, 190, 237);
     color: black;
-    padding:25px;
+    padding:5px;
     font-weight: 900;
     font-size: 50px;
     border: 15px;
@@ -29,46 +73,46 @@ h1 {
     border-color: black rgba(86, 84, 84, 0.783);
     box-shadow: 0px 0px 15px 1px white ;
     text-align: center;
-    margin-left: 35vw;
-    margin-top: -19.7vh;
+    margin-left: 33%;
 }
 
 #ballPic {
     display: flex;
     width: 250px;
     height: 250px;
-    margin-top: 8vh;
-    margin-left: 34vw;
+    margin-top: 1.9%;
+    margin-bottom: 5px;
+    margin-left: 40%;
     border-radius: 50%;
     border-style: double solid;
     border-width: 15px;
     border-color: purple black;
-    box-shadow: 0px 0px 100px 1px white;
+    box-shadow: 0px 0px 10px 20px black;
 }
 
 #complimentButton {
     display: flex;
-    margin-left: 52vw;
-    margin-top: -20vh;
-    margin-bottom: 2vh;
+    margin-left: 26.5%;
+    /* margin-top: 1%; */
+    margin-bottom: -1.8%;
     border-radius: 50%;
-    padding: 15px;
+    padding: 18px;
     font-weight: 800;
     font-size: large;
     border-color: black;
     background-color: rgba(255, 255, 255, 0.83);
     border-width: 8px;
     border-style: double;
-    box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.306);
     cursor: pointer;
+    box-shadow: 0px 0px 20px 1px black;
 }
 
 #fortuneButton {
     display: flex;
-    margin-left: 49vw;
+    margin-left: 57%;
     border-radius: 50%;
     /* margin-top: 10vh; */
-    margin-bottom: 0vh;
+    margin-top: -3.5%;
     padding: 15px;
     font-weight: 800;
     font-size: large;
@@ -76,125 +120,96 @@ h1 {
     border-color: black;
     background-color: rgba(255, 255, 255, 0.83);
     border-width: 8px;
-    box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.306);
+    box-shadow: 0px 0px 20px 1px black;
     cursor: pointer;
 }
 
-#wiseBall {
+#all {
     display: flex;
-    /* margin-top: 4vh; */
-    margin-left: -5vw;
-    padding: 20px;
+    margin-left: 40.1%;
+    border-radius: 50%;
+    margin-top: -4%;
+    padding: 18px;
     font-weight: 800;
     font-size: large;
-    border-radius: 50%;
-    border-color: black;
-    background-color: rgba(255, 255, 255, 0.83) ;
-    border-width: 8px;
-    border-style: double;
-    box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.306);
-    cursor: pointer;
-}
-
-#dynamicCheck {
-    display: flex;
-    margin-left: 44vw;
-    border-radius: 50%;
-    margin-top: 20px;
-}
-
-#newInputBox {
-    margin-left: -1.5vw ;
-    padding: 5px;
-    font-weight: 800;
-    font-size: small;
-    border-color: black;
-    border-width: 5px;
-    /* box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.138); */
-}
-
-#wiseBtn {
-    font-weight: 800;
-    border-color: black;
-    background-color: white;
-    border-width: 5px;
-    cursor: pointer;
-    
-}
-
-#newElementId {
-    display: flex;
-    margin-left: 46vw;
-    margin-right: 44vw;
-    border-radius: 5%;
-    margin-top: 20px;
-    box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.205);
-}
-
-#newElementIdTwo {
-    display: flex;
-    margin-left: 47.2vw;
-    margin-right: 47.5vw;
-    margin-top: 15px;
-    box-shadow: 0px 0px 50px 10px black;
-}
-
-#wiseRating {
-    display: flex;
-    margin-left: 40vw;
-    margin-right: 39.5vw;
-    margin-top: 5px;
-    background-color:rgba(255, 255, 255, 0.83) ;
-    border-color: black;
-    border-width: 10px;
-    border-style:double;
-    padding: 10px;
-    color: black;
-    font-weight: 800;
-    font-size: medium;
-    box-shadow: 0px 0px 50px 10px black;
-}
-
-#myList {
-    display: flex;
-    margin-left: 45.2vw;
-    /* border-radius: 5%; */
-    margin-top: 15px;
-    padding: 5px;
-    font-weight: 800;
-    background-color: white;
     border-style: double;
     border-color: black;
-    border-width: 10px;
-    cursor: pointer;
-    box-shadow: 0px 0px 50px 10px black;
-}
-
-option {
-    font-weight: 800;
-}
-
-p {
-    display: flex;
-    margin-left: 40vw;
-    margin-right: 39.5vw;
-    margin-top: 20px;
-    padding: 5px;
-    border-style:double;
-    border-width: 10px;
-    border-color: black;
-    color: black;
-    font-size: medium;
-    font-weight: 800;
     background-color: rgba(255, 255, 255, 0.83);
-    box-shadow: 0px 0px 50px 10px black;
+    border-width: 8px;
+    box-shadow: 0px 0px 20px 1px black;
+    cursor: pointer;
 }
 
-#ratingSubmit,#favourite  {
-    margin-left: 20px;
+h2 {
+    display: flex;
+    color: white;
+    margin-left: 40%;
+    background-color: rgba(0, 0, 0, 0.713);
+    margin-right: 46%;
+    margin-bottom: .01%;
+    padding: 1%;
+}
+
+section {
+    display: flex;
+    flex-wrap:wrap;
+    color: white;
+    /* margin-left: 27%; */
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.713);
+    /* text-align: center; */
+    padding-left: 4%;
+}
+
+h3 {
+    margin-right:1%;
+}
+
+#delete-sec {
+    display: flex;
+    margin-left: 55%;
+    margin-bottom: -4%;
+    color: white;
+}
+
+#del-btn {
+    margin-top: 8%;
+    padding: 5px;
     font-weight: 800;
+    border-style: double;
     border-color: black;
-    background-color: white;
-    border-width: 4px;
+    background-color: rgba(255, 255, 255, 0.83);
+    border-width: 5px;
+    box-shadow: 0px 0px 20px 1px black;
+    cursor: pointer;
+}
+
+#create-quest {
+    color: white;
+    font-size: large;
+    font-weight: 400;
+    margin-left: 42.5%;
+    margin-top: 10px;
+}
+
+input {
+    display: flex;
+    margin-bottom: 1%;
+    border-style: double;
+    border-color: black;
+    border-width: 5px;
+}
+
+#create-btn {
+    margin-left: 20px;
+    padding: 5px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    border-style: double;
+    border-color: black;
+    background-color: rgba(255, 255, 255, 0.83);
+    border-width: 5px;
+    box-shadow: 0px 0px 20px 1px black;
     cursor: pointer;
 }
